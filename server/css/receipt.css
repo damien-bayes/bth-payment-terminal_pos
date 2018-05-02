@@ -1,0 +1,77 @@
+.receipt {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  color: #404042;
+  position: relative;
+  overflow: hidden;
+}
+
+.receipt .receipt-sigil {
+  position: absolute;
+  right: 8px;
+  top: 10%;
+  transform: translate(0, -10%);
+  width: 80px;
+  height: 80px;
+}
+
+.receipt .receipt-status {
+  flex: 1;
+  text-align: center;
+  padding: .5em .25em;
+  color: #ffffff;
+  background-color: #390b11;
+  font-size: 1em;
+}
+
+.receipt .receipt-info-list {
+  padding: 1em;
+  list-style: none;
+}
+
+.receipt .receipt-info-list>li {
+  padding-top: .25em;
+}
+
+.receipt .receipt-info-list>li p {
+  font-size: 1em;
+}
+
+.receipt .receipt-info-list>li h4 {
+  font-size: 80%;
+}
+
+.receipt .receipt-payment-details {
+  display: flex;
+  flex: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: .5em;
+  border-top: 1px dashed #404042;
+}
+
+.receipt .receipt-payment-details p {
+  font-size: 80%;
+}
+
+.receipt .receipt-payment-details h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.receipt .receipt-extra {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+.receipt .receipt-extra p {
+  font-size: 80%;
+}

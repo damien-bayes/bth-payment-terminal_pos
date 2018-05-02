@@ -1,0 +1,63 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.carousel>.carousel-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.25, 1);
+  transition-duration: 800ms;
+  transform: translate3d(0px, 0, 0);
+}
+
+.carousel>.carousel-frame+.carousel-components {
+  display: flex;
+  height: 100%;
+}
+
+.carousel>.carousel-frame+.carousel-components div[class*='-control'] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s linear;
+  align-self: center;
+  width: 30px;
+  height: 64px;
+  background-color: #390b11;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.carousel>.carousel-frame+.carousel-components .carousel-indicator {
+  flex: 100%;
+  align-self: flex-end;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.carousel>.carousel-frame+.carousel-components .carousel-indicator>li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 .2em;
+  transition: border .15s linear;
+}
+
+.carousel>.carousel-frame+.carousel-components .carousel-indicator>li.active {
+  background: #390b11;
+}

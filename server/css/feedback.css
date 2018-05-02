@@ -1,0 +1,58 @@
+.feedback-success {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 512px;
+  margin: 0 auto;
+}
+
+.feedback-success>.icon {
+  margin: 0 2em;
+  height: 160px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #390b11;
+  color: #ffffff;
+}
+
+.feedback-success>.icon span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 200%;
+  margin: .5em .5em 0 0;
+}
+
+.feedback-success>.icon img {
+  width: 96px;
+  height: 96px;
+  filter: invert(100%);
+}
+
+.feedback-success>.content {
+  background-color: #FAFAFA;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  padding: 1em;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.feedback-success>.content .button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  border-radius: 24px;
+}
+
+.feedback-success>.content h3 {
+  text-transform: uppercase;
+}
+
+.feedback-success>.content p {
+  margin: 1em 0;
+  color: #313131;
+}

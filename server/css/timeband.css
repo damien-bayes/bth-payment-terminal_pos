@@ -1,0 +1,119 @@
+.timeband {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+  color: #404042;
+  text-align: center;
+  font-size: 1em;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  position: relative;
+  padding: .25em;
+}
+
+.timeband::after {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  opacity: 0.25;
+  background-color: #ffffff;
+}
+
+.timeband>.timeband-header {
+  height: 48px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px solid #404042;
+}
+
+.timeband>.timeband-secondary-header {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeband>.timeband-secondary-header p {
+  font-size: 14px;
+}
+
+.timeband p {
+  font-size: 14px;
+}
+
+.timeband .fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  margin-right: .5em;
+  border-radius: 2px;
+  padding: .25em;
+  color: #404042;
+  border: 1px solid #404042;
+}
+
+.timeband>.timeband-body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.timeband>.timeband-body>div {
+  flex: 50%;
+}
+
+.timeband>.timeband-weekday {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+}
+
+.timeband>.timeband-weekday>li {
+  margin: 0 .5em;
+  padding: .25em .5em;
+}
+
+.timeband>.timeband-weekday>li.active {
+  background-color: #390b11;
+  color: #ffffff;
+}
+
+.timeband .timeband-weather-details {
+  color: #404042;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+}
+
+.timeband .timeband-weather-details li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 .5em;
+}
+
+.timeband h2 {
+  font-size: 48px;
+}
+
+.timeband h3 {
+  font-size: 100%;
+}

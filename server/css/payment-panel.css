@@ -1,0 +1,84 @@
+.payment-panel {
+  padding: .5em;
+  background-color: rgba(255, 255, 255, .5);
+  color: #404042;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.payment-panel>.payment-panel-caption .fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  margin-right: .5em;
+  border-radius: 2px;
+  padding: .25em;
+  color: #404042;
+  border: 1px solid #404042;
+}
+
+.payment-panel>.payment-panel-caption {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #404042;
+  padding: .5em;
+}
+
+.payment-panel>.payment-panel-caption p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.payment-panel>.payment-panel-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+}
+
+.payment-panel .payment-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.payment-panel .payment-details .fa {
+  font-size: 22px;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  line-height: 29px;
+  margin-right: .5em;
+  border-radius: 2px;
+  text-align: center;
+  color: #404042;
+  border: 1px solid #404042;
+}
+
+.payment-panel>.payment-panel-body i {
+  margin: 0 .5em;
+}
+
+.payment-panel>.payment-panel-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-top: 1px solid #404042;
+}
+
+.payment-panel h3, .payment-panel h2, .payment-panel p {
+  margin: 0;
+}
+
+.payment-panel h2 {
+  font-size: 300%;
+  color: #404042;
+}

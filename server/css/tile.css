@@ -1,0 +1,145 @@
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.service-grid {}
+
+.service-grid-item {
+  display: block;
+  float: left;
+  position: relative;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -moz-transition: all .2s cubic-bezier(.4, 0, .2, 1);
+  -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1);
+  transition: all .2s cubic-bezier(.4, 0, .2, 1);
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 64px;
+}
+
+.service-grid-link {
+  display: block;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.service-grid-link:hover {
+  border-top: 4px solid #d8232a;
+}
+
+.service-grid-link:hover .service-grid-tile {
+  background-color: #d8232a;
+  color: #fff;
+  animation: bounceIn 1s linear;
+}
+
+.service-grid-tile {
+  font-size: 24px;
+  line-height: 18px;
+  padding: 12px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  -webkit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  width: 100%;
+  color: #575c67;
+}
+
+.service-grid .a {
+  background-image: url(../images/parking.svg);
+}
+
+.service-grid .b {
+  background-image: url(../images/reservation.svg);
+}
+
+.service-grid .c {
+  background-image: url(../images/shower.svg);
+}
+
+.service-grid .d {
+  background-image: url(../images/sanction.svg);
+}
+
+.service-grid .e {
+  background-image: url(../images/laundry.svg);
+}
+
+.service-grid .f {
+  background-image: url(../images/sauna.svg);
+}
+
+.service-grid .g {
+  background-image: url(../images/sanction.svg);
+}
+
+/*
+@media all and (max-width: 320px) {
+  .span__1, .span__2, .span__4 {
+    width: 100%;
+    .service-grid-link {
+      padding-bottom: 100%;
+    }
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .span__1, .span__2, .span__4 {
+    width: 49.545252%;
+    .service-grid-link {
+      padding-bottom: 100%;
+    }
+  }
+}*/
+
+@media all and (min-width: 481px) {
+  .span__1 {
+    width: 25%;
+  }
+  .span__1 .service-grid-link {
+    padding-bottom: 100%;
+  }
+  .span__2 {
+    width: 50%;
+  }
+  .span__2 .service-grid-link {
+    padding-bottom: 50%;
+  }
+  .span__4 {
+    width: 100%;
+  }
+  .span__4 .service-grid-link {
+    padding-bottom: 25%;
+  }
+}

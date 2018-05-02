@@ -1,0 +1,108 @@
+ul.reservationList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: .5em;
+}
+
+ul.reservationList>li {
+  position: relative;
+  min-width: 200px;
+  min-height: 224px;
+}
+
+ul.reservationList>li input[type="radio"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+ul.reservationList>li input[type="radio"]:checked+.reservationCard>.reservationCardHeader, ul.reservationList>li input[type="radio"]:checked+.reservationCard>.reservationCardFooter {
+  background-color: #390b11;
+  color: #ffffff;
+}
+
+.reservationCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  user-select: none;
+  color: #313131;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.reservationCard img {
+  width: 64px;
+  height: 64px;
+  filter: opacity(.75);
+}
+
+.reservationCard>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.reservationCard>.reservationCardHeader {
+  flex: 0 0 1;
+  order: 1;
+  background-color: #ebebeb;
+  padding: .25em;
+}
+
+.reservationCard>.reservationCardHeader p {
+  padding-bottom: .25em;
+}
+
+.reservationCard>.reservationCardBody {
+  flex: 1;
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.reservationCard>.reservationCardBody>.reservationCardIcon {
+  position: relative;
+}
+
+.reservationCard>.reservationCardBody>.reservationCardIcon span {
+  position: absolute;
+  top: -18px;
+  right: -20px;
+  font-size: 1.250em;
+  color: #313131;
+}
+
+.reservationCard>.reservationCardFooter {
+  flex: 0 0 32px;
+  background-color: #ebebeb;
+  order: 3;
+}
+
+.reservationCard h3 {
+  font-size: 1.250em;
+  font-weight: 500;
+}
+
+.reservationCard h3, .reservationCard p {
+  margin: 0;
+  /*border: 1px solid black;*/
+}
+
+.reservationCard sub {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: .25em;
+  font-weight: 400;
+  line-height: 0;
+}

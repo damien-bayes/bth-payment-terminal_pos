@@ -1,0 +1,14 @@
+.tooltip {
+  animation: zoomIn .3s ease-out;
+  display: inline-block;
+  padding: .5em;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  background-color: #390b11;
+  border: 0;
+  max-width: 256px;
+  font-size: 80%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 970;
+}

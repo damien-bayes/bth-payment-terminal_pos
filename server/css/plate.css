@@ -1,0 +1,21 @@
+.plate {
+  padding: 1em;
+  border: 1px solid #E0E0E0;
+  margin-bottom: .5em;
+}
+
+.plate .form-control {
+  margin: 0;
+}
+
+.plate .input-group-addon {
+  flex-direction: column;
+}
+
+.plate .plate-select {
+  width: 96px;
+}
+
+.plate .input-group-addon img {
+  height: 32px;
+}

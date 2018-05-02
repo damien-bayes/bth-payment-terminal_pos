@@ -1,0 +1,32 @@
+.scrollbar-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+
+.scrollbar-content {
+  height: 100%;
+  width: calc(100% + 18px);
+  padding: 0 2em 0 1em;
+  position: relative;
+  overflow: auto;
+  box-sizing: border-box;
+  user-select: none;
+  text-align: justify;
+}
+
+.scrollbar-bar {
+  position: relative;
+  background: #c1c1c1;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  /* Default width is ~9 pixels */
+  width: 24px;
+  transition: opacity 0.25s linear;
+}

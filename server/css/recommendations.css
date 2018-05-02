@@ -1,0 +1,64 @@
+.recommendations {
+  order: 1;
+  flex-direction: column;
+}
+
+.recommendations a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .5);
+  text-decoration: none !important;
+  padding: .5em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.recommendations .recommendation-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.recommendations .recommendation-icon span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+}
+
+.recommendations .recommendation-icon img {
+  width: 48px;
+  height: 48px;
+  filter: opacity(75%);
+}
+
+.recommendations .recommendation-details {
+  flex: 0 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.recommendations .recommendation-details .fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+  margin-right: .5em;
+  border-radius: 2px;
+  padding: .25em;
+  color: #404042;
+  border: 1px solid #404042;
+}
+
+.recommendations h3 {
+  font-size: 100%;
+}

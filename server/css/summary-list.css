@@ -1,0 +1,56 @@
+.summary-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: .5em 0;
+}
+
+.summary-list>.summary-list-item {
+  padding: 0 .5em;
+  margin: .25em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.summary-list .truncated-line {
+  width: 250px;
+}
+
+.summary-list .summary-list-headline, .summary-list .summary-list-content {
+  margin: 0;
+}
+
+.summary-list>li .summary-list-headline {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 1em 0;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+.summary-list>li .summary-list-content {
+  font-size: 32px;
+  margin: .5em 0;
+}
+
+.summary-list>.summary-list-item.palette-a {
+  background-color: #390b11;
+}
+
+.summary-list>.summary-list-item.palette-a:before {
+  content: "";
+  width: 64px;
+  height: 64px;
+  background-image: url(../images/education-chart.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -12px;
+  right: -12px;
+  position: absolute;
+  display: inline-block;
+  filter: invert(100%) opacity(.5);
+}

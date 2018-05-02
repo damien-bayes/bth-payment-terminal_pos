@@ -1,0 +1,92 @@
+.agent-data-panel {
+  padding: .5em;
+  margin-top: 1em;
+  background-color: rgba(255, 255, 255, .5);
+  color: #404042;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.agent-data-panel>.agent-data-panel-summary {
+  display: flex;
+  padding: 1em 0 0 0;
+}
+
+.agent-data-panel>.agent-data-panel-summary .agent-data-panel-income {
+  display: flex;
+  flex-direction: column;
+}
+
+.agent-data-panel>.agent-data-panel-summary>div {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agent-data-panel img {
+  width: 96px;
+  height: 96px;
+  filter: opacity(75%);
+}
+
+.agent-data-panel .fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  margin: 0 .5em;
+  border-radius: 2px;
+  padding: .25em;
+  color: #404042;
+  border: 1px solid #404042;
+}
+
+.agent-data-panel h3, .agent-data-panel h2, .agent-data-panel p {
+  margin: 0;
+}
+
+.agent-data-panel h2 {
+  font-size: 300%;
+  color: #404042;
+}
+
+.agent-data-panel>.agent-data-panel-caption p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.agent-data-panel>.agent-data-panel-caption {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #404042;
+  padding: 1em 0 1em 1em;
+}
+
+.agent-data-panel>.agent-data-panel-caption>div {
+  margin: 0 .5em;
+}
+
+.agent-data-panel .agent-data-panel-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 1em;
+  margin-top: 1em;
+}
+
+.agent-data-panel>.agent-data-panel-list dt, dd {
+  display: block;
+  margin: 0;
+}
+
+.agent-data-panel>.agent-data-panel-list dt {
+  flex: 0 0 50%;
+}
+
+.agent-data-panel>.agent-data-panel-list dd {
+  text-align: right;
+  flex: 0 0 50%;
+}

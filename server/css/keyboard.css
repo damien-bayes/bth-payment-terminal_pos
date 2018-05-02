@@ -1,0 +1,96 @@
+.keyboard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  flex-wrap: wrap;
+  background-color: #FAFAFA;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 490;
+  user-select: none;
+  padding: .25em 1em;
+}
+
+.keyboard.hidden {
+  display: none;
+}
+
+.keyboard>.keyboard-item {
+  flex: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard>.keyboard-item .keyboard-button {
+  transition: all ease-in-out;
+  padding: 0;
+  margin: .1em;
+  text-decoration: none;
+  font-size: 1.15em;
+  font-weight: 400;
+  color: #313131;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.keyboard>.keyboard-item .keyboard-button::after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  border-radius: 100% !important;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+  width: .125em;
+  height: .125em;
+  background: rgba(0, 0, 0, .1);
+}
+
+.keyboard>.keyboard-item .keyboard-button:focus:not(:active)::after {
+  animation: impulse 1s ease-out;
+}
+
+.keyboard>.keyboard-item .keyboard-button .fa {
+  pointer-events: none;
+}
+
+.keyboard>.keyboard-item .keyboard-button:hover {
+  background-color: #EEEEEE;
+}
+
+.keyboard .fullNameSearchingList {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  text-align: center;
+  list-style: none;
+  max-height: 128px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: .5em 0;
+}
+
+.keyboard .fullNameSearchingList>li {
+  padding: .25em 0;
+  width: 100%;
+}
+
+.keyboard .fullNameSearchingList>li:hover {
+  background-color: #390b11;
+  cursor: pointer;
+  color: #ffffff;
+}

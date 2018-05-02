@@ -1,0 +1,145 @@
+/* Section 0 */
+
+.datepicker {
+  position: fixed;
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  z-index: 9001;
+  overflow: hidden;
+  background: #ffffff;
+  cursor: default;
+  user-select: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.datepicker.hidden {
+  display: none;
+}
+
+/* END: Section 0 */
+
+/* Section 1 */
+
+.dp-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dp-controls>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+}
+
+.dp-controls>.dp-horizontal-arrow {
+  flex: 0 0 15%;
+  position: relative;
+}
+
+.dp-controls>.dp-horizontal-arrow .fa {
+  pointer-events: none;
+}
+
+.dp-controls>.dp-control-deck {
+  flex: 1;
+}
+
+.dp-controls>.dp-control-deck span {
+  margin: 0 .25em;
+}
+
+/* END: Section 1 */
+
+/* Section 2 */
+
+.dp-weekdays {
+  display: flex;
+}
+
+.dp-weekdays>.dp-day {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, .5);
+}
+
+/* END: Section 2 */
+
+/* Section 3 */
+
+.dp-numbers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dp-numbers>.dp-number {
+  flex: 0 0 calc(100% / 7);
+  display: flex;
+  padding: .25em 0;
+  justify-content: center;
+}
+
+.dp-numbers .dp-current {}
+
+.dp-numbers .dp-active {
+  background-color: #390b11;
+  color: #ffffff;
+}
+
+.dp-numbers .dp-disabled {
+  color: rgba(0, 0, 0, .25);
+}
+
+/* END: Section 3 */
+
+/* Section 4 */
+
+.dp-overlay.hidden {
+  display: none;
+}
+
+.dp-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dp-overlay>div {
+  background: rgba(255, 255, 255, .9);
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.dp-overlay>.dp-overlay-horizontal-arrow {
+  flex: 0 0 15%;
+  position: relative;
+}
+
+.dp-overlay .dp-overlay-year {
+  font-size: 3em;
+}
+
+.dp-overlay>.dp-overlay-horizontal-arrow .fa {
+  pointer-events: none;
+}
+
+.dp-overlay>.dp-overlay-deck {
+  flex: 1;
+}
+
+.dp-overlay>.dp-overlay-deck span {
+  margin: 0 .25em;
+}
+
+/* END: Section 4 */

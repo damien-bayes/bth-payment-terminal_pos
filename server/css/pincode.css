@@ -1,0 +1,41 @@
+.pincode {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.pincode form {
+  width: 80%;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.pincode .pincode-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pincode .pincode-item.pincode-left-side {
+  flex: 0 0 30%;
+  color: #404042;
+  background-color: rgba(255, 255, 255, .25);
+  text-align: center;
+  padding: 4em;
+}
+
+.pincode .pincode-item.pincode-left-side h2 {
+  margin: 1em 0;
+}
+
+.pincode .pincode-item.pincode-left-side img {
+  filter: opacity(50%);
+  width: 196px;
+  height: 196px;
+}
+
+.pincode .pincode-item.pincode-right-side {
+  flex: 0 0 70%;
+}

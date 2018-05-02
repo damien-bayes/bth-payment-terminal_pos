@@ -1,0 +1,72 @@
+.button {
+  user-select: none;
+  position: relative;
+  display: block-inline;
+  transition: all .3s ease-in-out;
+  padding: .5em 1em;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+  outline: 0;
+  cursor: pointer;
+  min-width: 96px;
+  min-height: 32px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: normal;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  color: #212121;
+  background-color: #fafafa;
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+
+a.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button::after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+  width: .25em;
+  height: .25em;
+  background: rgba(255, 255, 255, .5);
+}
+
+.button:focus:not(:active)::after {
+  animation: impulse 1s ease-out;
+}
+
+.button i {
+  margin-left: .5em;
+}
+
+.button.small-button {
+  padding: .25em .5em;
+}
+
+.button.large-button {
+  padding: 1em 2em;
+}
+
+.button.success-button {
+  background-color: #28a745;
+  color: #ebebeb;
+}
+
+.button.primary-button {
+  background-color: #390b11;
+  color: #ebebeb;
+}

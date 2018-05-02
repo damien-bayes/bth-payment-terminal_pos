@@ -1,0 +1,51 @@
+.sidebar-menu {
+  width: 256px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 3px 6px rgba(#000000, 0.24);
+}
+
+.sidebar-menu.inactive .sidebar-menu-text {
+  display: none;
+}
+
+.fading {
+  justify-content: flex-end;
+}
+
+.sidebar-menu ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+}
+
+.sidebar-menu ul li .sidebar-menu-item {
+  display: block;
+  padding: .5em .5em;
+  color: #404042;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu ul li .sidebar-menu-item.disabled {
+  color: rgba(0, 0, 0, .3);
+  pointer-events: none;
+}
+
+.sidebar-menu i, span {
+  pointer-events: none;
+}
+
+.sidebar-menu ul li .sidebar-menu-item.active {
+  background-color: #390b11;
+  color: #ffffff;
+}
+
+.sidebar-menu ul li .sidebar-menu-item:focus:not(:active)::after {
+  animation: blast 1s ease-out;
+}

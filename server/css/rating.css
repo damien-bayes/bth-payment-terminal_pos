@@ -1,0 +1,15 @@
+.rating {
+  margin-bottom: .5em;
+}
+
+.rating button {
+  background: none;
+  border: 0;
+  color: rgba(0, 0, 0, .4);
+  outline: 0;
+  cursor: pointer;
+}
+
+.rating button.active {
+  color: #390b11;
+}
