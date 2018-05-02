@@ -137,7 +137,7 @@ namespace IPTS.Objects
             var fullPath = tempPath + fileName;
             Process.Start(fullPath);
 
-            /*Uri baseAddress = new Uri("https://ipts.agor.kz/api");
+            /*Uri baseAddress = new Uri("https://<YOUR_DOMAIN_NAME>/api");
             Utils.PostRequest(string.Format("{0}/terminal.update", baseAddress), new NameValueCollection()
             {
                 {"guid"}
