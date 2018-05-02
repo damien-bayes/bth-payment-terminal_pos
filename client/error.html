@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>IPTS - Error page</title>
+
+    <style>
+    @keyframes bounceIn {
+        from, 20%, 40%, 60%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+        }
+
+        20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+        }
+
+        40% {
+        transform: scale3d(.9, .9, .9);
+        }
+
+        60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+        }
+
+        80% {
+        transform: scale3d(.97, .97, .97);
+        }
+
+        to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+        }
+    }
+
+     body {
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 18px;
+        color: #404042;
+     }
+
+     body::before {
+        z-index: -1;
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        bottom: 0;
+        border-top: 0vw solid transparent;
+        border-left: 25vw solid transparent;
+        border-bottom: 150vh solid rgba(0,0,0,.1);
+     }
+
+     body::after {
+        z-index: -1;
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        top: 0;
+        border-bottom: 0vw solid transparent;
+        border-left: 95vw solid transparent;
+        border-top: 82vh solid rgba(0,0,0,.2);
+     }
+
+     .error {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+     }
+
+     .error > * {
+         margin: 0;
+     }
+
+     .error h1 {
+         font-size: 10rem;
+         margin-bottom: .25em;
+         animation: bounceIn 1s;
+     }
+
+     .error h2 {
+         font-size: 100%;
+         font-weight: 400;
+     }
+
+     .error #errorMessage {
+         font-size: 200%;
+         font-weight: bold;
+     }
+    </style>
+</head>
+<body>
+    <div class="error">
+        <h1>:(</h1>
+        <h2>Обслуживание временно приостановлено</h2>
+        <p id="errorMessage">{@errorMessage}</p>
+    </div>
+
+    <script type="text/javascript">
+        document["addEventListener"]("DOMContentLoaded", function (c) { var d = null; c = !1; !1 !== c && clearInterval(c); c = setInterval(function () { "undefined" !== typeof customObject && !0 === customObject["checkInternetConnection"]() && "undefined" !== typeof credentialManager && (d = credentialManager["configure"]()["token"]) && (terminalObject["setToken"](d), customObject["loadDefaultUri"]()) }, 5E3) });
+    </script>
+</body>
+</html>
