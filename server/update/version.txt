@@ -1,0 +1,1 @@
+1.11.0.37;https://<YOUR_DOMAIN_NAME>.com/update/terminal.exe;aabc219831a48aff95c9c7e28d049534
