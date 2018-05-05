@@ -1,0 +1,4 @@
+http://www.citizen-systems.co.jp/english/support/download/printer/driver/windows/30e/3300/DriverSpecs3300E_L.pdf
+
+1) http://www.citizen-systems.co.jp/english/support/download/printer/driver/windows/drv30-e.htm - Driver A is used by default
+2) http://www.citizen-systems.co.jp/english/support/download/printer/driver/windows/drvdown-e.htm - Driver B
