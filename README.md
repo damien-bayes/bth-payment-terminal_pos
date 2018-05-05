@@ -1,1 +1,2 @@
-# Integrated Payment Terminal System based on CEF (Chromium Embedded Framework)
+# Integrated Payment Terminal System
+This project is based on CEF (Chromium Embedded Framework)
