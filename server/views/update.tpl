@@ -73,7 +73,7 @@
       element.parentNode.replaceChild(renewedElement, element);
     }, 5000);
 
-    fetch('https://ipts.agor.kz/update/version.txt').then(function(response) {
+    fetch('https://<YOUR_DOMAIN>.com/update/version.txt').then(function(response) {
       return response.text();
     }).then(function(data) {
       const version = data.split(';')[0];
